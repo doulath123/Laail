@@ -19,6 +19,10 @@ const userController = require("./usersController/userController");
 
 app.use("/", userController);
 
+const ContractsController = require("./ContractsController/ContractsController");
+
+app.use("/", ContractsController);
+
 
 app.listen(PORT, async()=>{
     
